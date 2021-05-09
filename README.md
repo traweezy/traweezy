@@ -4,7 +4,7 @@
 
 A full stack web developer, curently working in the financial sector, speciallizing in react, nodejs, and typescript.
 
-Wanting to branch out into other areas of developpment using languages like Rust
+Wanting to branch out into other areas of development using languages like Rust
 
 ---
 
