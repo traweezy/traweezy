@@ -53,17 +53,7 @@ Currently building things with **Go**, **React 19**, **TypeScript**, **Postgres
 <p align="left">
   <a href="https://tyschumacher.me"><img alt="Website" src="https://img.shields.io/badge/Website-tyschumacher.me-1E88E5?logo=google-chrome&logoColor=white" /></a>
   <a href="https://linkedin.com/in/tylerschumacher"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:contact@tyschumacher.me"><img alt="Email" src="https://img.shields.io/badge/Email-contact@tyschumacher.me-grey?logo=gmail&logoColor=white" /></a>
+  <a href="mailto:tyschumacher@proton.me"><img alt="Email" src="https://img.shields.io/badge/Email-contact@tyschumacher.me-grey?logo=gmail&logoColor=white" /></a>
 </p>
 
 ---
-
-## 🧩 Quote
-
-> “Simplicity is prerequisite for reliability.” — Edsger Dijkstra
-
----
-
-<p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="480"/>
-</p>
