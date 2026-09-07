@@ -91,7 +91,7 @@ I also mentor engineers and review technical designs. I care about software that
     <p><img src="https://img.shields.io/badge/Released%20CLI-238636?style=flat-square" alt="Released CLI"></p>
     <p>A Go CLI and terminal dashboard for local backend services. Stack profiles, diagnostics, logs, and connection details in one place.</p>
     <p><code>Go · Bubble Tea · Podman</code></p>
-    <p><a href="https://github.com/traweezy/stackctl">Source</a> · <a href="https://github.com/traweezy/stackctl/releases">Releases</a></p>
+    <p><a href="https://github.com/traweezy/stackctl">Source</a> · <a href="https://github.com/traweezy/stackctl/releases">Releases</a> · <a href="https://github.com/traweezy/stackctl/blob/master/docs/output-contract.md">CLI contract</a></p>
     <p><sub>Public 0.x releases. Actively developed.</sub></p>
     <p>
       <a href="https://github.com/traweezy/stackctl/releases"><img src="https://img.shields.io/github/v/release/traweezy/stackctl?style=flat-square&amp;label=release" alt="Latest Stackctl release"></a>
@@ -115,7 +115,7 @@ I also mentor engineers and review technical designs. I care about software that
     <p><img src="https://img.shields.io/badge/Sample%20data%20demo-8250DF?style=flat-square" alt="Sample data demo"></p>
     <p>Technical news with summaries linked to source evidence. Go services for ingestion and hybrid search, with a Next.js reading workspace.</p>
     <p><code>Go · Next.js · PostgreSQL</code></p>
-    <p><a href="https://github.com/traweezy/relantern">Source</a> · <a href="https://web-demo-ce4e.up.railway.app/demo">Demo</a></p>
+    <p><a href="https://github.com/traweezy/relantern">Source</a> · <a href="https://web-demo-ce4e.up.railway.app/demo">Demo</a> · <a href="https://github.com/traweezy/relantern/blob/staging/docs/adr/009-postgresql-hybrid-search.md">Search design</a></p>
     <p><sub>In development. Demo uses illustrative stories.</sub></p>
   </td>
   <td width="50%" valign="top">
@@ -136,25 +136,31 @@ I also mentor engineers and review technical designs. I care about software that
 
 <p align="center">
   <a href="https://github.com/traweezy">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/stats-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/stats-light.svg">
-    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/stats-light.svg" alt="GitHub activity for traweezy" width="480">
-  </picture>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/stats-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/stats-light.svg">
+      <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/stats-light.svg" alt="GitHub activity for traweezy" width="400" align="top">
+    </picture>
+  </a>
+  <a href="https://github.com/traweezy?tab=repositories">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/languages-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/languages-light.svg">
+      <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/languages-light.svg" alt="Language breakdown of my public repositories by code size, not a proficiency score" width="330" align="top">
+    </picture>
   </a>
 </p>
 
-<p align="center"><sub>GitHub activity does not capture all of my professional work.</sub></p>
+<p align="center"><sub>Language percentages describe public repository code, not proficiency. GitHub activity does not capture all of my professional work.</sub></p>
 
-<details>
-  <summary>Contribution snake</summary>
-  <p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/snake-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/snake.svg">
-      <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/snake.svg" alt="An animated snake moving through my GitHub contribution calendar" width="830">
-    </picture>
-  </p>
-</details>
+### Contribution snake
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/snake.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/snake.svg" alt="An animated snake moving through my GitHub contribution calendar" width="830">
+  </picture>
+</p>
 
 Outside of software, I play bass and follow the Bills, Sabres, and Knicks.
