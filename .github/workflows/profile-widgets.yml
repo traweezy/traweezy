@@ -1,0 +1,79 @@
+name: Refresh profile widgets
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/profile-widgets.yml
+  schedule:
+    - cron: "37 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-widget-updates
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.repository == 'traweezy/traweezy'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the profile repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Generate stats card in dark mode
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
+        with:
+          card: stats
+          options: "username=traweezy&show_icons=true&hide_rank=true&disable_animations=true&card_width=480&custom_title=GitHub+activity&theme=github_dark"
+          path: profile/stats-dark.svg
+          core_version: "2.1.5"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate stats card in light mode
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
+        with:
+          card: stats
+          options: "username=traweezy&show_icons=true&hide_rank=true&disable_animations=true&card_width=480&custom_title=GitHub+activity&theme=default"
+          path: profile/stats-light.svg
+          core_version: "2.1.5"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Validate generated SVGs
+        shell: python
+        run: |
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          for name in ("stats-dark.svg", "stats-light.svg"):
+              path = Path("profile") / name
+              data = path.read_text()
+              root = ET.fromstring(data)
+              if root.tag != "{http://www.w3.org/2000/svg}svg":
+                  raise SystemExit(f"Not an SVG: {path}")
+              if "something went wrong" in data.lower():
+                  raise SystemExit(f"Refusing to publish an error card: {path}")
+              print(f"Validated {path}")
+
+      - name: Commit changed cards
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- profile/stats-dark.svg profile/stats-light.svg
+          if git diff --cached --quiet; then
+            echo "Cards have not changed."
+            exit 0
+          fi
+          git commit -m "Refresh profile activity cards [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
