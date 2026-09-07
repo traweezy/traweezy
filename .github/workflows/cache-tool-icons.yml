@@ -89,6 +89,10 @@ jobs:
                           data = response.read(1_100_001)
                           assert len(data) <= 1_100_000, f"Oversized asset: {url}"
                           return data, response.headers.get_content_type()
+                  except urllib.error.HTTPError as error:
+                      if error.code == 404 or attempt == 2:
+                          raise
+                      time.sleep(attempt + 1)
                   except (urllib.error.URLError, TimeoutError):
                       if attempt == 2:
                           raise
@@ -97,7 +101,7 @@ jobs:
           def validate(data):
               svg = ET.fromstring(data)
               assert svg.tag == ns + "svg", "Response is not an SVG"
-              assert any(e.tag.rsplit("}", 1)[-1] in ("path", "polygon", "circle", "ellipse", "image", "use", "text") for e in svg.iter()), "Empty SVG"
+              assert any(e.tag.rsplit("}", 1)[-1] in ("path", "polygon", "polyline", "circle", "ellipse", "image", "use", "text") for e in svg.iter()), "Empty SVG"
               assert "something went wrong" not in data.decode().lower(), "Error image"
               for node in svg.iter():
                   assert node.tag.rsplit("}", 1)[-1] not in ("script", "foreignObject"), "Active SVG content"
@@ -132,16 +136,21 @@ jobs:
                   item["sha256"] = hashlib.sha256(data).hexdigest()
                   print("Validated cached " + relative, flush=True)
                   return url, url, item
-              source = repairs.get(url, (url, None, None))[0]
-              data, content_type = fetch(source)
-              assert content_type in ("image/svg+xml", "text/plain", "application/xml", "text/xml", "application/octet-stream"), f"Unexpected MIME type {content_type}: {source}"
-              validate(data)
               parsed = urllib.parse.urlparse(url)
+              source = repairs.get(url, (url, None, None))[0]
               if parsed.hostname == "skillicons.dev":
                   query = urllib.parse.parse_qs(parsed.query)
                   name = query["i"][0] + "-" + query.get("theme", ["light"])[0]
+                  if query["i"][0] == "railway":
+                      source = "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/railway.svg"
               else:
                   name = Path(parsed.path).stem
+              data, content_type = fetch(source)
+              assert content_type in ("image/svg+xml", "text/plain", "application/xml", "text/xml", "application/octet-stream"), f"Unexpected MIME type {content_type}: {source}"
+              try:
+                  validate(data)
+              except Exception as error:
+                  raise ValueError(f"Invalid SVG from {source}: {error}") from error
               assert re.fullmatch(r"[A-Za-z0-9_-]+", name), name
               relative = "profile/icons/" + name + ".svg"
               item = {"source": source, "original_url": url, "path": relative, "content_type": content_type}
@@ -155,8 +164,18 @@ jobs:
               print("OK " + relative, flush=True)
               return url, public_base + relative, item
 
+          results = []
+          failures = []
           with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
-              results = list(executor.map(cache, urls))
+              tasks = {executor.submit(cache, url): url for url in urls}
+              for task in concurrent.futures.as_completed(tasks):
+                  try:
+                      results.append(task.result())
+                  except Exception as error:
+                      failures.append(f"{tasks[task]}: {error}")
+          if failures:
+              raise SystemExit("Asset validation failed:\n" + "\n".join(failures))
+          results.sort(key=lambda result: result[0])
           paths = [item["path"] for _, _, item in results]
           assert len(paths) == len(set(paths)), "Duplicate output filenames"
           for old, new, _ in results:
@@ -193,7 +212,7 @@ jobs:
               license_name = title.lower().replace(" ", "-") + "-LICENSE.txt"
               (icon_dir / license_name).write_bytes(license_data)
               credits += f"* [{title}](https://github.com/{repo}): [{license_name}]({license_name}).\n"
-          credits += "\nMeilisearch and Testing Library use Simple Icons paths in matching rounded tiles.\nBrand names and marks belong to their respective owners.\n"
+          credits += "\nMeilisearch and Testing Library use Simple Icons paths in matching rounded tiles.\nRailway uses the Skills Icons asset because the old endpoint returned an empty SVG.\nBrand names and marks belong to their respective owners.\n"
           (icon_dir / "SOURCES.md").write_text(credits)
           print(f"Validated {len(results)} SVG files. All 42 tool icons now use repository assets.", flush=True)
 
@@ -201,7 +220,6 @@ jobs:
         shell: python
         run: |
           import html
-          from html.parser import HTMLParser
           import json
           from pathlib import Path
           import re
