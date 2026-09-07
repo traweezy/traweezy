@@ -1,0 +1,65 @@
+name: Refresh contribution snake
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/contribution-snake.yml
+  schedule:
+    - cron: "47 6 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-widget-updates
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.repository == 'traweezy/traweezy'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the profile repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Generate contribution snake SVGs
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: traweezy
+          outputs: |
+            profile/snake.svg
+            profile/snake-dark.svg?palette=github-dark
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Validate generated SVGs
+        shell: python
+        run: |
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          for name in ("snake.svg", "snake-dark.svg"):
+              path = Path("profile") / name
+              root = ET.fromstring(path.read_text())
+              if root.tag != "{http://www.w3.org/2000/svg}svg":
+                  raise SystemExit(f"Not an SVG: {path}")
+              print(f"Validated {path}")
+
+      - name: Commit changed animation
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- profile/snake.svg profile/snake-dark.svg
+          if git diff --cached --quiet; then
+            echo "Animation has not changed."
+            exit 0
+          fi
+          git commit -m "Refresh contribution animation [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
