@@ -32,7 +32,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: stats
-          options: "username=traweezy&show_icons=true&hide_rank=true&disable_animations=true&card_width=480&custom_title=GitHub+activity&theme=github_dark"
+          options: "username=traweezy&show_icons=true&hide_rank=true&disable_animations=true&card_width=400&custom_title=GitHub+activity&theme=github_dark"
           path: profile/stats-dark.svg
           core_version: "2.1.5"
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -42,8 +42,28 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: stats
-          options: "username=traweezy&show_icons=true&hide_rank=true&disable_animations=true&card_width=480&custom_title=GitHub+activity&theme=default"
+          options: "username=traweezy&show_icons=true&hide_rank=true&disable_animations=true&card_width=400&custom_title=GitHub+activity&theme=default"
           path: profile/stats-light.svg
+          core_version: "2.1.5"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate public language card in dark mode
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
+        with:
+          card: top-langs
+          options: "username=traweezy&layout=compact&langs_count=6&card_width=330&custom_title=Public+repo+languages&disable_animations=true&theme=github_dark"
+          path: profile/languages-dark.svg
+          core_version: "2.1.5"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate public language card in light mode
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
+        with:
+          card: top-langs
+          options: "username=traweezy&layout=compact&langs_count=6&card_width=330&custom_title=Public+repo+languages&disable_animations=true&theme=default"
+          path: profile/languages-light.svg
           core_version: "2.1.5"
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
@@ -53,14 +73,22 @@ jobs:
         run: |
           from pathlib import Path
           import xml.etree.ElementTree as ET
-          for name in ("stats-dark.svg", "stats-light.svg"):
+          names = (
+              "stats-dark.svg", "stats-light.svg",
+              "languages-dark.svg", "languages-light.svg",
+          )
+          for name in names:
               path = Path("profile") / name
-              data = path.read_text()
+              data = path.read_text(encoding="utf-8")
               root = ET.fromstring(data)
               if root.tag != "{http://www.w3.org/2000/svg}svg":
                   raise SystemExit(f"Not an SVG: {path}")
               if "something went wrong" in data.lower():
                   raise SystemExit(f"Refusing to publish an error card: {path}")
+              if name.startswith("languages-"):
+                  text = " ".join(root.itertext())
+                  if "Public repo languages" not in text or "%" not in text:
+                      raise SystemExit(f"Missing language data: {path}")
               print(f"Validated {path}")
 
       - name: Commit changed cards
@@ -69,11 +97,11 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- profile/stats-dark.svg profile/stats-light.svg
+          git add -- profile/stats-dark.svg profile/stats-light.svg profile/languages-dark.svg profile/languages-light.svg
           if git diff --cached --quiet; then
             echo "Cards have not changed."
             exit 0
           fi
-          git commit -m "Refresh profile activity cards [skip ci]"
+          git commit -m "Refresh profile activity and language cards [skip ci]"
           git pull --rebase origin main
           git push origin HEAD:main
