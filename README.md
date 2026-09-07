@@ -25,9 +25,55 @@ I also mentor engineers and review technical designs. I care about software that
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react,ts,nextjs,go,java,nodejs,postgres,redis,docker,kubernetes,githubactions,linux&amp;perline=6&amp;theme=dark">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=react,ts,nextjs,go,java,nodejs,postgres,redis,docker,kubernetes,githubactions,linux&amp;perline=6&amp;theme=light">
-    <img src="https://skillicons.dev/icons?i=react,ts,nextjs,go,java,nodejs,postgres,redis,docker,kubernetes,githubactions,linux&amp;perline=6&amp;theme=light" alt="React, TypeScript, Next.js, Go, Java, Node.js, PostgreSQL, Redis, Docker, Kubernetes, GitHub Actions, and Linux" width="330">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react&amp;theme=dark">
+    <img src="https://skillicons.dev/icons?i=react&amp;theme=light" alt="React" title="React" width="48" height="48">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts&amp;theme=dark">
+    <img src="https://skillicons.dev/icons?i=ts&amp;theme=light" alt="TypeScript" title="TypeScript" width="48" height="48">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nextjs&amp;theme=dark">
+    <img src="https://skillicons.dev/icons?i=nextjs&amp;theme=light" alt="Next.js" title="Next.js" width="48" height="48">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=go&amp;theme=dark">
+    <img src="https://skillicons.dev/icons?i=go&amp;theme=light" alt="Go" title="Go" width="48" height="48">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=java&amp;theme=dark">
+    <img src="https://skillicons.dev/icons?i=java&amp;theme=light" alt="Java" title="Java" width="48" height="48">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs&amp;theme=dark">
+    <img src="https://skillicons.dev/icons?i=nodejs&amp;theme=light" alt="Node.js" title="Node.js" width="48" height="48">
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=postgres&amp;theme=dark">
+    <img src="https://skillicons.dev/icons?i=postgres&amp;theme=light" alt="PostgreSQL" title="PostgreSQL" width="48" height="48">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=redis&amp;theme=dark">
+    <img src="https://skillicons.dev/icons?i=redis&amp;theme=light" alt="Redis" title="Redis" width="48" height="48">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker&amp;theme=dark">
+    <img src="https://skillicons.dev/icons?i=docker&amp;theme=light" alt="Docker" title="Docker" width="48" height="48">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=kubernetes&amp;theme=dark">
+    <img src="https://skillicons.dev/icons?i=kubernetes&amp;theme=light" alt="Kubernetes" title="Kubernetes" width="48" height="48">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=githubactions&amp;theme=dark">
+    <img src="https://skillicons.dev/icons?i=githubactions&amp;theme=light" alt="GitHub Actions" title="GitHub Actions" width="48" height="48">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=linux&amp;theme=dark">
+    <img src="https://skillicons.dev/icons?i=linux&amp;theme=light" alt="Linux" title="Linux" width="48" height="48">
   </picture>
 </p>
 
