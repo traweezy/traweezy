@@ -1,0 +1,494 @@
+[
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/biome.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/biome.svg",
+    "path": "profile/icons/biome.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "242a5ed10dc9b20381131f69ed2ce924034e7fff9256ab0ba79d5b8ec0119031"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/medusa.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/medusa.svg",
+    "path": "profile/icons/medusa.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "4f4fb3eca2bb0ea7693897114c32c8a16b800456994104e9677e5252efb23393"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/meilisearch.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/meilisearch.svg",
+    "path": "profile/icons/meilisearch.svg",
+    "content_type": "image/svg+xml",
+    "modification": "Added rounded theme aware background and brand color",
+    "sha256": "8260d04204a5246f19da24bdbe5d15e8e01c3bfb9ee68089fb6c590934557db0"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/motion.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/motion.svg",
+    "path": "profile/icons/motion.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "d66baa7b877fc44f05c461d557a1519e4dbdd326cd6a48a73e66e46bd9ed6762"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/opentelemetry.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/opentelemetry.svg",
+    "path": "profile/icons/opentelemetry.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "88ebd1f210d14ac33e0af0c8c4bc2012018f4f2cbb9084e90f84fbb306998b3e"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/playwright.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/playwright.svg",
+    "path": "profile/icons/playwright.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "256e1db9f102cc8ee6fe27c5520ab0839058c1c73cb7a010154bb3ecf18edd4d"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/podman.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/podman.svg",
+    "path": "profile/icons/podman.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "bedb5673de3a1799ce1bcce401522703d804507cbf130b89a4301acbc46ad37c"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/radixui.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/radixui.svg",
+    "path": "profile/icons/radixui.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "34f9667dfa2fbb1a4204bd9f884a209d62041fd81f4ee142aff5c729513572cd"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/resend.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/resend.svg",
+    "path": "profile/icons/resend.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "918e34f249083418959659c3b85143c39dcb63cbcdbd308984e09d6cd685cc97"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/stripe.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/stripe.svg",
+    "path": "profile/icons/stripe.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "32d02990f6a6ad4492eb3bc3348e5056752d0d0c91c7821808ae2a4699ab662f"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/tanstack.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/tanstack.svg",
+    "path": "profile/icons/tanstack.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "32d413546ee5b90c29f4ca2b805b99564e5153b76e434eb5d6720f0070084b3d"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/testinglibrary.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/testinglibrary.svg",
+    "path": "profile/icons/testinglibrary.svg",
+    "content_type": "image/svg+xml",
+    "modification": "Added rounded theme aware background and brand color",
+    "sha256": "f33e4a43501151491fed3575f0430166ba7d5edde84d5798beb33f8b1a660ee8"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/zod.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/zod.svg",
+    "path": "profile/icons/zod.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "1c7a7839bb877e02308b00726dc5ea0dd1b4575a804adb45bb048eec547a08d6"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/zustand.svg",
+    "original_url": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/zustand.svg",
+    "path": "profile/icons/zustand.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "3616d959c686654cde5c1b613937f9ce330388a2e193c16a7b679dd1a66b9695"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=css&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=css&theme=dark",
+    "path": "profile/icons/css-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "9500757bc9a49cffc2dbba13966f233a90024ec4d351b1364e716fb11c132102"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=css&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=css&theme=light",
+    "path": "profile/icons/css-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "9500757bc9a49cffc2dbba13966f233a90024ec4d351b1364e716fb11c132102"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=docker&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=docker&theme=dark",
+    "path": "profile/icons/docker-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "c6463a692c02e7c494dbfbf9635202d597503bf749e87b1605b220ff1d34a53e"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=docker&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=docker&theme=light",
+    "path": "profile/icons/docker-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "c6463a692c02e7c494dbfbf9635202d597503bf749e87b1605b220ff1d34a53e"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=git&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=git&theme=dark",
+    "path": "profile/icons/git-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "6b5807a6b5ebfb262f72a2464ee039c1112006931a5bdffee9e7a7f84b407abe"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=git&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=git&theme=light",
+    "path": "profile/icons/git-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "6b5807a6b5ebfb262f72a2464ee039c1112006931a5bdffee9e7a7f84b407abe"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=githubactions&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=githubactions&theme=dark",
+    "path": "profile/icons/githubactions-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "fc56c02bdeb8d3e019c2c96121e7f41a2b3f1b3847db7b1d99062627151e3658"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=githubactions&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=githubactions&theme=light",
+    "path": "profile/icons/githubactions-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "94fe65b6d401185345133dd1b8d73142545caaf9631dd7cf9230f14fc86067a9"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=gitlab&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=gitlab&theme=dark",
+    "path": "profile/icons/gitlab-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "eb25ba7ef6929b7d150a0c368ee4a96b897a637febb0a1442624313ecdabec59"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=gitlab&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=gitlab&theme=light",
+    "path": "profile/icons/gitlab-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "6644bf715a1715b53c39a4d74dfeb55cf1623730e7bc6fa153465b756f2629c7"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=go&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=go&theme=dark",
+    "path": "profile/icons/go-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "525c35f4d7d9cd2f31355627ca386d5f57d92534c667bf8921be76aefa50ed43"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=go&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=go&theme=light",
+    "path": "profile/icons/go-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "525c35f4d7d9cd2f31355627ca386d5f57d92534c667bf8921be76aefa50ed43"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=grafana&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=grafana&theme=dark",
+    "path": "profile/icons/grafana-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "5a23a7df708b44662330c5ee5697fafd1d2a2135553daf85d9aeeb2d3c6ba9cc"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=grafana&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=grafana&theme=light",
+    "path": "profile/icons/grafana-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "ed57fc3c40935bdc1cc44e033049d4c6b286cb0414029852f03f28d1f0ba483c"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=graphql&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=graphql&theme=dark",
+    "path": "profile/icons/graphql-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "2d20fd3fc814ce5c373b5ea3d6690cba89b94f91f1f8f4af0b3030bcf3a43fe9"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=graphql&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=graphql&theme=light",
+    "path": "profile/icons/graphql-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "b3c1d020c4c58fac88045466c1023262bbdcdfe1d698edb14913de4e03257b5a"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=java&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=java&theme=dark",
+    "path": "profile/icons/java-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "3626c55bcc164f875cf500df6b899a1478106f691f847a6657c3de6e22d26ebb"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=java&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=java&theme=light",
+    "path": "profile/icons/java-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "f7bab4f07bd2e8b76b7b575a17e55ab43a87d13d78a01871d41038d65d71de1f"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=jest&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=jest&theme=dark",
+    "path": "profile/icons/jest-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "a61096cc98d9a81e8eff6c9842076f649da37f02aa3db6f9b974edf2cfba2e3c"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=jest&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=jest&theme=light",
+    "path": "profile/icons/jest-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "a61096cc98d9a81e8eff6c9842076f649da37f02aa3db6f9b974edf2cfba2e3c"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=js&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=js&theme=dark",
+    "path": "profile/icons/js-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "f9d920e57e6dc7f73d0f1535a229b4605426ded15852db6fb4ed2c7c6772007b"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=js&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=js&theme=light",
+    "path": "profile/icons/js-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "f9d920e57e6dc7f73d0f1535a229b4605426ded15852db6fb4ed2c7c6772007b"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=kafka&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=kafka&theme=dark",
+    "path": "profile/icons/kafka-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "5e9f635cf37b1e3065d6d38a4e31a0e72eee39aba4d0b6e1288afc005172bf1a"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=kafka&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=kafka&theme=light",
+    "path": "profile/icons/kafka-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "5e9f635cf37b1e3065d6d38a4e31a0e72eee39aba4d0b6e1288afc005172bf1a"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=kubernetes&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=kubernetes&theme=dark",
+    "path": "profile/icons/kubernetes-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "f328f81c8b565d07b11aae44d8448499a63c3229b4c2629553bbafd069a6b322"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=kubernetes&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=kubernetes&theme=light",
+    "path": "profile/icons/kubernetes-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "f328f81c8b565d07b11aae44d8448499a63c3229b4c2629553bbafd069a6b322"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=linux&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=linux&theme=dark",
+    "path": "profile/icons/linux-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "f13bcb45e1a85fc26bea87de0b483d70361c99c447092dd1a5bec65d8e50dfa8"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=linux&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=linux&theme=light",
+    "path": "profile/icons/linux-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "a0c1231fbbcf075833ca66a621c13f6c558655f213da3006ce2adeede07721e8"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=nextjs&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=nextjs&theme=dark",
+    "path": "profile/icons/nextjs-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "ff688be431ca3e245370b47d125011bfe6c0c37dce121c9ea7de276cb0400c67"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=nextjs&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=nextjs&theme=light",
+    "path": "profile/icons/nextjs-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "f7fcb24c4ff965fcccad5702551b7711cc690abcbf1fd66342fd1df9e4171d21"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=nodejs&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=nodejs&theme=dark",
+    "path": "profile/icons/nodejs-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "eacf89e6cb29ba4cc5f5cbaeb14824a658878825828c04efa69273c38e468fa2"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=nodejs&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=nodejs&theme=light",
+    "path": "profile/icons/nodejs-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "251c88b879e139dfc83e560487036c940e4b693eefb0e1b66b4c371541c4d908"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=pnpm&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=pnpm&theme=dark",
+    "path": "profile/icons/pnpm-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "b7b09277b5cad6dc973842f75f218357248ae8d62601ca82935459852653a93f"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=pnpm&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=pnpm&theme=light",
+    "path": "profile/icons/pnpm-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "8f923e8fd2face25d91cf78ff286e93ff098715cdd7f30bac3b547f6f8d1fefc"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=postgres&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=postgres&theme=dark",
+    "path": "profile/icons/postgres-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "c93c447bc03f078ba628f12a5bb87f7adf4b754a3276fa78303be52716c3611d"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=postgres&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=postgres&theme=light",
+    "path": "profile/icons/postgres-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "a590ace740b6d3a1077ed939cdeddd2b3711e87e55846ddc32f2b27b79997890"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/railway.svg",
+    "original_url": "https://skillicons.dev/icons?i=railway&theme=dark",
+    "path": "profile/icons/railway-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "a9411ef60b043be0d0997122ba47b1f4e26d2ee2b6d8ab94b53e2a8985d021a2"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/railway.svg",
+    "original_url": "https://skillicons.dev/icons?i=railway&theme=light",
+    "path": "profile/icons/railway-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "a9411ef60b043be0d0997122ba47b1f4e26d2ee2b6d8ab94b53e2a8985d021a2"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=react&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=react&theme=dark",
+    "path": "profile/icons/react-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "cbd9d56c2bacc67bcc5dc93a081bda167623ab6e5de8dd3ae25c590b7f8cdb2a"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=react&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=react&theme=light",
+    "path": "profile/icons/react-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "2914a40965a4aaefd811847b02ebd91ae86d3b6eb10372ea1f02c243f9c95811"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=redis&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=redis&theme=dark",
+    "path": "profile/icons/redis-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "aed2bc135fa4878ce6e83fcfba66dcb0360223c00c8a9cd057b411a76daed5e4"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=redis&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=redis&theme=light",
+    "path": "profile/icons/redis-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "8c6f8e6c6ac0b114536133153d075364bd23a234b5fe4d8c405a4b1891d8ac69"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=redux&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=redux&theme=dark",
+    "path": "profile/icons/redux-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "afef8c709e4b9085d744727011ed8d259fac9f3ad5ecd5e927c6d2147a4ee236"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=redux&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=redux&theme=light",
+    "path": "profile/icons/redux-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "afef8c709e4b9085d744727011ed8d259fac9f3ad5ecd5e927c6d2147a4ee236"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=spring&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=spring&theme=dark",
+    "path": "profile/icons/spring-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "55e3629967e9d76b17446023c4bdc962f7edfbe294ec83e92a7d7dd0d3978a5d"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=spring&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=spring&theme=light",
+    "path": "profile/icons/spring-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "16ee0488ad3eac1649c9d81affe7c4536dccae043f6f5b8000d5fa4ec67e7d9f"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=tailwind&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=tailwind&theme=dark",
+    "path": "profile/icons/tailwind-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "a91ba80b1efbad5b1e42c7970432d6096e48a9e12e8f8fe6b73115a0ccb1d8c2"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=tailwind&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=tailwind&theme=light",
+    "path": "profile/icons/tailwind-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "fc2e5296fcab521071c757033988cdb6d703996952de5c057051697b19d21b71"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=ts&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=ts&theme=dark",
+    "path": "profile/icons/ts-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "2e3883815e20a555ce17e917cb922002f5c4435fa1963fadb92ac2e0484e79fa"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=ts&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=ts&theme=light",
+    "path": "profile/icons/ts-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "2e3883815e20a555ce17e917cb922002f5c4435fa1963fadb92ac2e0484e79fa"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=vercel&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=vercel&theme=dark",
+    "path": "profile/icons/vercel-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "941c9de4966f51ab34d618a866685857cb3c0f5eaa992a624c29b7fdf89f8562"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=vercel&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=vercel&theme=light",
+    "path": "profile/icons/vercel-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "0714ce929cc7b98b5728b870fcd5886b0013f89fb68f7ed753ff3be54da2fffe"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=vite&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=vite&theme=dark",
+    "path": "profile/icons/vite-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "cad830d012aef12a915d28ea20a107a8e477d78e40e5ebfe568d5702a90c88b0"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=vite&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=vite&theme=light",
+    "path": "profile/icons/vite-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "42ce0fa07937e4462fd0a3baae1aa5800ed1baca8ee084e4c0b2304e39c41806"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=vitest&theme=dark",
+    "original_url": "https://skillicons.dev/icons?i=vitest&theme=dark",
+    "path": "profile/icons/vitest-dark.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "de154cf38b7d18392ee18de8cb63de3b53ebcc10164543aae82dac7dba3a1988"
+  },
+  {
+    "source": "https://skillicons.dev/icons?i=vitest&theme=light",
+    "original_url": "https://skillicons.dev/icons?i=vitest&theme=light",
+    "path": "profile/icons/vitest-light.svg",
+    "content_type": "image/svg+xml",
+    "sha256": "4bd28e9334cea852f03d5d228fe96f537e73e10e58b5faf8cff896b87570a3af"
+  }
+]

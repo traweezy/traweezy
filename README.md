@@ -23,134 +23,134 @@ I also mentor engineers and review technical designs. I care about software that
 
 ## Tools I work with
 
-<!-- Individual images wrap across the available width. Keep commas out of srcset URLs. -->
+<!-- Repository hosted icons wrap across the available width. -->
 <p align="left">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=react&amp;theme=light" alt="React" title="React" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/react-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/react-light.svg" alt="React" title="React" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=ts&amp;theme=light" alt="TypeScript" title="TypeScript" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/ts-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/ts-light.svg" alt="TypeScript" title="TypeScript" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=js&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=js&amp;theme=light" alt="JavaScript" title="JavaScript" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/js-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/js-light.svg" alt="JavaScript" title="JavaScript" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nextjs&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=nextjs&amp;theme=light" alt="Next.js" title="Next.js" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/nextjs-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/nextjs-light.svg" alt="Next.js" title="Next.js" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=css&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=css&amp;theme=light" alt="CSS" title="CSS" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/css-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/css-light.svg" alt="CSS" title="CSS" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=tailwind&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=tailwind&amp;theme=light" alt="Tailwind CSS" title="Tailwind CSS" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/tailwind-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/tailwind-light.svg" alt="Tailwind CSS" title="Tailwind CSS" width="48" height="48">
   </picture>
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/tanstack.svg" alt="TanStack Query and Table" title="TanStack Query and Table" width="48" height="48">
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/zustand.svg" alt="Zustand" title="Zustand" width="48" height="48">
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/tanstack.svg" alt="TanStack Query and Table" title="TanStack Query and Table" width="48" height="48">
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/zustand.svg" alt="Zustand" title="Zustand" width="48" height="48">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=redux&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=redux&amp;theme=light" alt="Redux" title="Redux" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/redux-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/redux-light.svg" alt="Redux" title="Redux" width="48" height="48">
   </picture>
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/radixui.svg" alt="Radix UI" title="Radix UI" width="48" height="48">
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/motion.svg" alt="Motion" title="Motion" width="48" height="48">
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/zod.svg" alt="Zod" title="Zod" width="48" height="48">
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/radixui.svg" alt="Radix UI" title="Radix UI" width="48" height="48">
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/motion.svg" alt="Motion" title="Motion" width="48" height="48">
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/zod.svg" alt="Zod" title="Zod" width="48" height="48">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=vite&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=vite&amp;theme=light" alt="Vite" title="Vite" width="48" height="48">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=go&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=go&amp;theme=light" alt="Go" title="Go" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/vite-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/vite-light.svg" alt="Vite" title="Vite" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=java&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=java&amp;theme=light" alt="Java" title="Java" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/go-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/go-light.svg" alt="Go" title="Go" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=nodejs&amp;theme=light" alt="Node.js" title="Node.js" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/java-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/java-light.svg" alt="Java" title="Java" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=spring&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=spring&amp;theme=light" alt="Spring Boot" title="Spring Boot" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/nodejs-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/nodejs-light.svg" alt="Node.js" title="Node.js" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=graphql&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=graphql&amp;theme=light" alt="GraphQL" title="GraphQL" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/spring-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/spring-light.svg" alt="Spring Boot" title="Spring Boot" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=postgres&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=postgres&amp;theme=light" alt="PostgreSQL" title="PostgreSQL" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/graphql-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/graphql-light.svg" alt="GraphQL" title="GraphQL" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=redis&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=redis&amp;theme=light" alt="Redis" title="Redis" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/postgres-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/postgres-light.svg" alt="PostgreSQL" title="PostgreSQL" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=kafka&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=kafka&amp;theme=light" alt="Apache Kafka" title="Apache Kafka" width="48" height="48">
-  </picture>
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/medusa.svg" alt="Medusa" title="Medusa" width="48" height="48">
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/stripe.svg" alt="Stripe" title="Stripe" width="48" height="48">
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/meilisearch.svg" alt="Meilisearch" title="Meilisearch" width="48" height="48">
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/resend.svg" alt="Resend" title="Resend" width="48" height="48">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=docker&amp;theme=light" alt="Docker" title="Docker" width="48" height="48">
-  </picture>
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/podman.svg" alt="Podman" title="Podman" width="48" height="48">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=kubernetes&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=kubernetes&amp;theme=light" alt="Kubernetes" title="Kubernetes" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/redis-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/redis-light.svg" alt="Redis" title="Redis" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=linux&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=linux&amp;theme=light" alt="Linux" title="Linux" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/kafka-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/kafka-light.svg" alt="Apache Kafka" title="Apache Kafka" width="48" height="48">
+  </picture>
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/medusa.svg" alt="Medusa" title="Medusa" width="48" height="48">
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/stripe.svg" alt="Stripe" title="Stripe" width="48" height="48">
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/meilisearch.svg" alt="Meilisearch" title="Meilisearch" width="48" height="48">
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/resend.svg" alt="Resend" title="Resend" width="48" height="48">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/docker-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/docker-light.svg" alt="Docker" title="Docker" width="48" height="48">
+  </picture>
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/podman.svg" alt="Podman" title="Podman" width="48" height="48">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/kubernetes-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/kubernetes-light.svg" alt="Kubernetes" title="Kubernetes" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=git&amp;theme=light" alt="Git" title="Git" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/linux-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/linux-light.svg" alt="Linux" title="Linux" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=githubactions&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=githubactions&amp;theme=light" alt="GitHub Actions" title="GitHub Actions" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/git-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/git-light.svg" alt="Git" title="Git" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=gitlab&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=gitlab&amp;theme=light" alt="GitLab CI" title="GitLab CI" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/githubactions-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/githubactions-light.svg" alt="GitHub Actions" title="GitHub Actions" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=railway&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=railway&amp;theme=light" alt="Railway" title="Railway" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/gitlab-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/gitlab-light.svg" alt="GitLab CI" title="GitLab CI" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=vercel&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=vercel&amp;theme=light" alt="Vercel" title="Vercel" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/railway-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/railway-light.svg" alt="Railway" title="Railway" width="48" height="48">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=pnpm&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=pnpm&amp;theme=light" alt="pnpm" title="pnpm" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/vercel-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/vercel-light.svg" alt="Vercel" title="Vercel" width="48" height="48">
   </picture>
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/biome.svg" alt="Biome" title="Biome" width="48" height="48">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=vitest&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=vitest&amp;theme=light" alt="Vitest" title="Vitest" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/pnpm-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/pnpm-light.svg" alt="pnpm" title="pnpm" width="48" height="48">
   </picture>
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/playwright.svg" alt="Playwright" title="Playwright" width="48" height="48">
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/biome.svg" alt="Biome" title="Biome" width="48" height="48">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=jest&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=jest&amp;theme=light" alt="Jest" title="Jest" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/vitest-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/vitest-light.svg" alt="Vitest" title="Vitest" width="48" height="48">
   </picture>
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/testinglibrary.svg" alt="Testing Library" title="Testing Library" width="48" height="48">
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/playwright.svg" alt="Playwright" title="Playwright" width="48" height="48">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=grafana&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=grafana&amp;theme=light" alt="Grafana" title="Grafana" width="48" height="48">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/jest-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/jest-light.svg" alt="Jest" title="Jest" width="48" height="48">
   </picture>
-  <img src="https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/opentelemetry.svg" alt="OpenTelemetry" title="OpenTelemetry" width="48" height="48">
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/testinglibrary.svg" alt="Testing Library" title="Testing Library" width="48" height="48">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/grafana-dark.svg">
+    <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/grafana-light.svg" alt="Grafana" title="Grafana" width="48" height="48">
+  </picture>
+  <img src="https://raw.githubusercontent.com/traweezy/traweezy/main/profile/icons/opentelemetry.svg" alt="OpenTelemetry" title="OpenTelemetry" width="48" height="48">
 </p>
 
 **Frontend:** React, TypeScript, JavaScript, Next.js, CSS, Tailwind CSS, TanStack Query and Table, Zustand, Redux, Radix UI, Motion, AG Grid.<br>
