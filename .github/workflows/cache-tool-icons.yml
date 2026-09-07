@@ -1,0 +1,264 @@
+name: Cache and validate tool icons
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/cache-tool-icons.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-tool-icons
+  cancel-in-progress: false
+
+jobs:
+  cache:
+    if: github.repository == 'traweezy/traweezy'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out profile
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Fetch, validate, and cache every tool icon
+        shell: python
+        run: |
+          import concurrent.futures
+          import hashlib
+          import html
+          from html.parser import HTMLParser
+          import json
+          from pathlib import Path
+          import re
+          import time
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+          import xml.etree.ElementTree as ET
+
+          root = Path.cwd()
+          readme = root / "README.md"
+          before = readme.read_text()
+          prefix, rest = before.split("## Tools I work with\n", 1)
+          section, suffix = rest.split("\n## Selected work", 1)
+          public_base = "https://raw.githubusercontent.com/traweezy/traweezy/main/"
+          icon_dir = root / "profile/icons"
+          icon_dir.mkdir(parents=True, exist_ok=True)
+          manifest_path = icon_dir / "manifest.json"
+          previous = json.loads(manifest_path.read_text()) if manifest_path.exists() else []
+          prior = {item["path"]: item for item in previous}
+          ns = "{http://www.w3.org/2000/svg}"
+          ET.register_namespace("", ns[1:-1])
+
+          class Images(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.items = []
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  if tag in ("img", "source"):
+                      self.items.append((tag, attrs))
+
+          parser = Images()
+          parser.feed(section)
+          images = [a for tag, a in parser.items if tag == "img"]
+          assert len(images) == 42, "Unexpected icon count; refusing to change layout"
+          urls = sorted({a["src" if tag == "img" else "srcset"] for tag, a in parser.items})
+          print(f"Checking {len(images)} icons and {len(urls)} image variants", flush=True)
+          repairs = {
+              "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/meilisearch.svg": (
+                  "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/meilisearch.svg", "Meilisearch", "FF5CAA"),
+              "https://raw.githubusercontent.com/syvixor/skills-icons/main/icons/testinglibrary.svg": (
+                  "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/testinglibrary.svg", "Testing Library", "E33332"),
+          }
+
+          def fetch(url):
+              parsed = urllib.parse.urlparse(url)
+              assert parsed.scheme == "https" and parsed.hostname in ("raw.githubusercontent.com", "skillicons.dev"), url
+              for attempt in range(3):
+                  try:
+                      request = urllib.request.Request(url, headers={"User-Agent": "traweezy-profile-icon-check"})
+                      with urllib.request.urlopen(request, timeout=20) as response:
+                          assert response.status == 200, f"HTTP {response.status}: {url}"
+                          data = response.read(1_100_001)
+                          assert len(data) <= 1_100_000, f"Oversized asset: {url}"
+                          return data, response.headers.get_content_type()
+                  except (urllib.error.URLError, TimeoutError):
+                      if attempt == 2:
+                          raise
+                      time.sleep(attempt + 1)
+
+          def validate(data):
+              svg = ET.fromstring(data)
+              assert svg.tag == ns + "svg", "Response is not an SVG"
+              assert any(e.tag.rsplit("}", 1)[-1] in ("path", "polygon", "circle", "ellipse", "image", "use", "text") for e in svg.iter()), "Empty SVG"
+              assert "something went wrong" not in data.decode().lower(), "Error image"
+              for node in svg.iter():
+                  assert node.tag.rsplit("}", 1)[-1] not in ("script", "foreignObject"), "Active SVG content"
+                  for attr, value in node.attrib.items():
+                      name = attr.rsplit("}", 1)[-1].lower()
+                      assert not name.startswith("on"), "SVG event handler"
+                      if name == "href":
+                          assert value.startswith(("#", "data:image/png;base64,", "data:image/webp;base64,")), "External SVG reference"
+              assert not re.search(rb"(?:url\s*\(\s*['\"]?https?:|@import)", data, re.I), "External SVG style"
+              return svg
+
+          def make_tile(data, title, color):
+              original = validate(data)
+              tile = ET.Element(ns + "svg", {"width": "256", "height": "256", "viewBox": "0 0 256 256", "role": "img", "aria-label": title})
+              ET.SubElement(tile, ns + "title").text = title
+              ET.SubElement(tile, ns + "style").text = ".tile{fill:#F4F2ED}@media(prefers-color-scheme:dark){.tile{fill:#15191C}}"
+              ET.SubElement(tile, ns + "rect", {"class": "tile", "width": "256", "height": "256", "rx": "40"})
+              group = ET.SubElement(tile, ns + "g", {"transform": "translate(40 40) scale(7.3333333333)", "fill": "#" + color})
+              for node in original:
+                  if node.tag == ns + "path":
+                      group.append(node)
+              return ET.tostring(tile, encoding="utf-8", xml_declaration=True)
+
+          def cache(url):
+              if url.startswith(public_base + "profile/icons/"):
+                  relative = url.removeprefix(public_base)
+                  local = root / relative
+                  assert local.resolve().is_relative_to(icon_dir.resolve())
+                  data = local.read_bytes()
+                  validate(data)
+                  item = prior.get(relative, {"source": url, "path": relative})
+                  item["sha256"] = hashlib.sha256(data).hexdigest()
+                  print("Validated cached " + relative, flush=True)
+                  return url, url, item
+              source = repairs.get(url, (url, None, None))[0]
+              data, content_type = fetch(source)
+              assert content_type in ("image/svg+xml", "text/plain", "application/xml", "text/xml", "application/octet-stream"), f"Unexpected MIME type {content_type}: {source}"
+              validate(data)
+              parsed = urllib.parse.urlparse(url)
+              if parsed.hostname == "skillicons.dev":
+                  query = urllib.parse.parse_qs(parsed.query)
+                  name = query["i"][0] + "-" + query.get("theme", ["light"])[0]
+              else:
+                  name = Path(parsed.path).stem
+              assert re.fullmatch(r"[A-Za-z0-9_-]+", name), name
+              relative = "profile/icons/" + name + ".svg"
+              item = {"source": source, "original_url": url, "path": relative, "content_type": content_type}
+              if url in repairs:
+                  _, title, color = repairs[url]
+                  data = make_tile(data, title, color)
+                  item["modification"] = "Added rounded theme aware background and brand color"
+              validate(data)
+              (root / relative).write_bytes(data)
+              item["sha256"] = hashlib.sha256(data).hexdigest()
+              print("OK " + relative, flush=True)
+              return url, public_base + relative, item
+
+          with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
+              results = list(executor.map(cache, urls))
+          paths = [item["path"] for _, _, item in results]
+          assert len(paths) == len(set(paths)), "Duplicate output filenames"
+          for old, new, _ in results:
+              section = section.replace(html.escape(old, quote=True), new).replace(old, new)
+          section = section.replace("<!-- Individual images wrap across the available width. Keep commas out of srcset URLs. -->", "<!-- Repository hosted icons wrap across the available width. -->")
+          check = Images()
+          check.feed(section)
+          assert len([a for tag, a in check.items if tag == "img"]) == 42
+          assert all(a["src" if tag == "img" else "srcset"].startswith(public_base + "profile/icons/") for tag, a in check.items)
+          for tag, attrs in check.items:
+              if tag == "img":
+                  assert attrs.get("width") == "48" and attrs.get("height") == "48"
+          after = prefix + "## Tools I work with\n" + section + "\n## Selected work" + suffix
+          assert after.split("\n## Selected work", 1)[1] == before.split("\n## Selected work", 1)[1]
+          readme.write_text(after)
+          manifest_path.write_text(json.dumps([item for _, _, item in results], indent=2) + "\n")
+
+          credits = "# Tool icon sources\n\nStatic copies prevent upstream outages or renames from breaking the profile.\nThe manifest records each source URL and SHA256 checksum.\n\n"
+          licenses = [
+              ("Skill Icons", "tandpfun/skill-icons", "main", ["LICENSE", "LICENSE.md"]),
+              ("Skills Icons", "syvixor/skills-icons", "main", ["LICENSE", "LICENSE.md"]),
+              ("Simple Icons", "simple-icons/simple-icons", "develop", ["LICENSE.md", "LICENSE"]),
+          ]
+          for title, repo, branch, candidates in licenses:
+              for filename in candidates:
+                  try:
+                      license_data, _ = fetch(f"https://raw.githubusercontent.com/{repo}/{branch}/{filename}")
+                      break
+                  except urllib.error.HTTPError as error:
+                      if error.code != 404:
+                          raise
+              else:
+                  raise RuntimeError("License not found: " + repo)
+              license_name = title.lower().replace(" ", "-") + "-LICENSE.txt"
+              (icon_dir / license_name).write_bytes(license_data)
+              credits += f"* [{title}](https://github.com/{repo}): [{license_name}]({license_name}).\n"
+          credits += "\nMeilisearch and Testing Library use Simple Icons paths in matching rounded tiles.\nBrand names and marks belong to their respective owners.\n"
+          (icon_dir / "SOURCES.md").write_text(credits)
+          print(f"Validated {len(results)} SVG files. All 42 tool icons now use repository assets.", flush=True)
+
+      - name: Check SVG decoding in Chrome
+        shell: python
+        run: |
+          import html
+          from html.parser import HTMLParser
+          import json
+          from pathlib import Path
+          import re
+          import shutil
+          import subprocess
+          import tempfile
+
+          browser = shutil.which("google-chrome") or shutil.which("chromium") or shutil.which("chromium-browser")
+          if not browser:
+              raise SystemExit("Chrome is unavailable; refusing to publish untested assets")
+          root = Path.cwd()
+          manifest = json.loads((root / "profile/icons/manifest.json").read_text())
+          images = "\n".join(f'<img src="{(root / item["path"]).as_uri()}" width="48" height="48" alt="{html.escape(item["path"])}">' for item in manifest)
+          script = """
+          <script>
+          Promise.all(Array.from(document.images, async image => {
+            try { await image.decode(); return image.naturalWidth > 0 && image.naturalHeight > 0 ? null : image.alt; }
+            catch { return image.alt; }
+          })).then(results => {
+            const failures = results.filter(Boolean);
+            const result = document.createElement('pre');
+            result.id = 'icon-check';
+            result.dataset.status = failures.length ? 'fail' : 'pass';
+            result.textContent = JSON.stringify({total: results.length, failures, dark: matchMedia('(prefers-color-scheme: dark)').matches});
+            document.body.appendChild(result);
+          });
+          </script>
+          """
+          with tempfile.TemporaryDirectory() as directory:
+              page = Path(directory) / "icons.html"
+              page.write_text('<!doctype html><html><head><meta charset="utf-8"><meta name="color-scheme" content="light dark"></head><body>' + images + script + '</body></html>')
+              for theme in ("light", "dark"):
+                  command = [browser, "--headless=new", "--no-sandbox", "--disable-dev-shm-usage", "--disable-background-networking", "--disable-extensions", "--no-first-run", "--allow-file-access-from-files", "--virtual-time-budget=6000", "--dump-dom", f"--user-data-dir={directory}/{theme}"]
+                  if theme == "dark":
+                      command.append("--force-dark-mode")
+                  command.append(page.as_uri())
+                  result = subprocess.run(command, capture_output=True, text=True, timeout=60, check=True)
+                  match = re.search(r'<pre id="icon-check" data-status="(pass|fail)">(.*?)</pre>', result.stdout, re.S)
+                  if not match:
+                      print(result.stderr[-3000:])
+                      raise SystemExit("Browser validation did not finish")
+                  details = json.loads(html.unescape(match.group(2)))
+                  print(theme + ": " + json.dumps(details), flush=True)
+                  assert match.group(1) == "pass", details
+                  assert details["dark"] == (theme == "dark"), "Theme test did not use the expected color scheme"
+
+      - name: Commit validated icon files and README
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- README.md profile/icons
+          if git diff --cached --quiet; then
+            echo "All cached icons are valid. No changes needed."
+            exit 0
+          fi
+          git commit -m "Fix missing tool icons and serve validated SVGs from profile repository [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
