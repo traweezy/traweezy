@@ -17,7 +17,7 @@
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&amp;size=20&amp;duration=2200&amp;pause=700&amp;color=3B82F6&amp;center=true&amp;vCenter=true&amp;width=660&amp;height=46&amp;repeat=false&amp;lines=Live+data.+Clear+interfaces.%3BUseful+tools.+Reliable+systems." alt="Live data. Clear interfaces. Useful tools. Reliable systems." width="660">
 </p>
 
-I've spent 10 years building software across sports betting, electronic trading, and web applications. At Caesars Sportsbook, I work on React and TypeScript interfaces and Go and Java integrations for live betting workflows. Previously, at Instinet, I modernized trading tools and improved deployment and recovery workflows.
+I've spent 10+ years building software across sports betting, electronic trading, and web applications. At Caesars Sportsbook, I work on React and TypeScript interfaces and Go and Java integrations for live betting workflows. Previously, at Instinet, I modernized trading tools and improved deployment and recovery workflows.
 
 I also mentor engineers and review technical designs. I care about software that is clear to use, holds up as data changes, and is straightforward for the next engineer to maintain.
 
