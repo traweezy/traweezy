@@ -1,8 +1,8 @@
 <h1 align="center">Tyler Schumacher</h1>
 
 <p align="center">
-  <strong>Senior Full Stack Engineer</strong><br>
-  Sports betting · Electronic trading · Developer tools<br>
+  <strong>Senior Full Stack and Product Engineer · Freelance</strong><br>
+  Commerce · Real-time systems · Developer tools<br>
   Buffalo, NY
 </p>
 
@@ -17,7 +17,9 @@
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&amp;size=20&amp;duration=2200&amp;pause=700&amp;color=3B82F6&amp;center=true&amp;vCenter=true&amp;width=660&amp;height=46&amp;repeat=false&amp;lines=Live+data.+Clear+interfaces.%3BUseful+tools.+Reliable+systems." alt="Live data. Clear interfaces. Useful tools. Reliable systems." width="660">
 </p>
 
-I've spent 10+ years building software across sports betting, electronic trading, and web applications. At Caesars Sportsbook, I work on React and TypeScript interfaces and Go and Java integrations for live betting workflows. Previously, at Instinet, I modernized trading tools and improved deployment and recovery workflows.
+I'm a freelance full stack and product engineer based in Buffalo, with 10+ years across commerce, sports betting, electronic trading, and web applications. I've been freelancing since October 2025; current client work includes Remorseless Records, a React, Next.js, TypeScript, and Medusa commerce platform with Stripe checkout, refunds, catalog management, and publishing workflows.
+
+My service focus includes websites, commerce systems, integrations, and internal tools for local businesses and remote teams. Available for freelance and contract work. Previously, at Caesars Sportsbook, I built React and TypeScript interfaces and Go and Java integrations for live betting workflows. At Instinet, I modernized trading tools and improved deployment and recovery workflows.
 
 I also mentor engineers and review technical designs. I care about software that is clear to use, holds up as data changes, and is straightforward for the next engineer to maintain.
 
@@ -180,7 +182,7 @@ I also mentor engineers and review technical designs. I care about software that
     <h3><a href="https://storefront-staging-41f0.up.railway.app/">Remorseless Records</a></h3>
     <a href="https://storefront-staging-41f0.up.railway.app/"><img src="https://www.tyschumacher.me/images/projects/remorseless-records.webp" alt="Remorseless Records staging music catalog with albums and filters" width="380"></a>
     <p><img src="https://img.shields.io/badge/Public%20staging-9A6700?style=flat-square" alt="Public staging"></p>
-    <p>Commerce and publishing tools for an independent music label, with a Next.js storefront, Medusa workflows, and payment recovery.</p>
+    <p>Current freelance client work: commerce and publishing tools for an independent music label, with a Next.js storefront, Medusa workflows, Stripe checkout and refunds, and payment recovery.</p>
     <p><code>Next.js · Medusa · Stripe</code></p>
     <p><a href="https://github.com/traweezy/remorseless-records">Source</a> · <a href="https://storefront-staging-41f0.up.railway.app/">Staging</a></p>
     <p><sub>In development. Preview is not the production store.</sub></p>
