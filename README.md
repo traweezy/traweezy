@@ -17,7 +17,7 @@
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&amp;size=20&amp;duration=2200&amp;pause=700&amp;color=3B82F6&amp;center=true&amp;vCenter=true&amp;width=660&amp;height=46&amp;repeat=false&amp;lines=Live+data.+Clear+interfaces.%3BUseful+tools.+Reliable+systems." alt="Live data. Clear interfaces. Useful tools. Reliable systems." width="660">
 </p>
 
-I'm a freelance full stack and product engineer based in Buffalo, with 10+ years across commerce, sports betting, electronic trading, and web applications. I've been freelancing since October 2025; current client work includes Remorseless Records, a React, Next.js, TypeScript, and Medusa commerce platform with Stripe checkout, refunds, catalog management, and publishing workflows.
+I'm a freelance full stack and product engineer based in Buffalo, with 10+ years across commerce, sports betting, electronic trading, and web applications. I've been freelancing since July 2025; current client work includes Remorseless Records, a React, Next.js, TypeScript, and Medusa commerce platform with Stripe checkout, refunds, catalog management, and publishing workflows.
 
 My service focus includes websites, commerce systems, integrations, and internal tools for local businesses and remote teams. Available for freelance and contract work. Previously, at Caesars Sportsbook, I built React and TypeScript interfaces and Go and Java integrations for live betting workflows. At Instinet, I modernized trading tools and improved deployment and recovery workflows.
 
